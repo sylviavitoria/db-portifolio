@@ -1,68 +1,151 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'TTSupermolot-Bold';
+  src: url('./assets/fonts/TTSupermolotBold.otf') format('opentype');
+  font-weight: bold;
+  font-display: swap;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.navbar {
+  background-color: #85D4F4;
+  padding: 55px 40px;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 80px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.navbar-left {
+  display: flex;
+  align-items: center;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+.navbar-left .logo {
+  height: 70px;
+  width: auto;
+}
+
+.navbar-center {
+  display: flex;
+  list-style: none;
+  gap: 150px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-center li {
+  list-style: none;
+}
+
+.navbar-center li a {
+  color: #414ABA;
+  font-size: 21px;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  text-decoration: none;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-family: 'TTSupermolot-Bold', 'Arial', sans-serif;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.navbar-center li a:hover {
+  color: #414ABA;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 80px;
+}
+
+.navbar-right .icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 6px;
+  padding: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.navbar-right .icon:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: center; 
   }
-  a:hover {
-    color: #747bff;
+
+  .navbar-left {
+    justify-content: center;
+    width: 100%;
   }
-  button {
-    background-color: #f9f9f9;
+
+  .navbar-center {
+    gap: 30px;
+    justify-content: center;
   }
+
+  .navbar-right {
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .navbar-right .icon {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .navbar-center {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar-center li a {
+    font-size: 14px;
+    font-family: 'TTSupermolot-Bold', 'Arial', sans-serif;
+  }
+}
+
+.navbar-left .logo {
+  height: 70px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+.navbar-left a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navbar-left a:hover .logo {
+  transform: scale(1.05);
+  opacity: 0.8;
 }
