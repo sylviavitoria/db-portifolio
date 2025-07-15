@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo-db-dark-blue.png';
 import github from '../assets/Button.png';
 import linkedin from '../assets/Frame1.png';
@@ -12,9 +13,30 @@ const Navbar = () => {
       </div>
 
       <ul className="navbar-center">
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Currículo</a></li>
-        <li><a href="#">Projetos</a></li>
+        <li>
+          <NavLink 
+            to="/" 
+            className={({ isActive }) => isActive ? 'active' : ''}
+          >
+            Sobre
+          </NavLink>
+        </li>
+        <li>
+          <NavLink 
+            to="/curriculo"
+            className={({ isActive }) => isActive ? 'active' : ''}
+          >
+            Currículo
+          </NavLink>
+        </li>
+        <li>
+          <NavLink 
+            to="/projetos"
+            className={({ isActive }) => isActive ? 'active' : ''}
+          >
+            Projetos
+          </NavLink>
+        </li>
       </ul>
 
       <div className="navbar-right">
