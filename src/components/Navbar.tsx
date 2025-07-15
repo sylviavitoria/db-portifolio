@@ -1,5 +1,5 @@
 import logo from '../assets/logo-db-dark-blue.png';
-import github from '../assets/Button.png'; 
+import github from '../assets/Button.png';
 import linkedin from '../assets/Frame1.png';
 
 const Navbar = () => {
@@ -18,8 +18,12 @@ const Navbar = () => {
       </ul>
 
       <div className="navbar-right">
-        <img src={github} alt="GitHub" className="icon" />
-        <img src={linkedin} alt="LinkedIn" className="icon" />
+        <a href="https://github.com/sylviavitoria" target="_blank" rel="noopener noreferrer">
+          <img src={github} alt="GitHub" className="icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/sylviavitoria/" target="_blank" rel="noopener noreferrer">
+          <img src={linkedin} alt="LinkedIn" className="icon" />
+        </a>
       </div>
     </nav>
   );
