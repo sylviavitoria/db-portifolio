@@ -11,9 +11,32 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  outline: none;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .navbar {
@@ -24,7 +47,6 @@ body {
   align-items: center;
   width: 100%;
   height: 80px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   gap: 80px;
 }
 
@@ -93,9 +115,14 @@ body {
     padding: 15px 20px;
     flex-direction: column;
     height: auto;
-    gap: 20px;
+    gap: 15px;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+    overflow-x: hidden;
   }
 
   .navbar-left {
@@ -104,8 +131,9 @@ body {
   }
 
   .navbar-center {
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .navbar-right {
@@ -115,22 +143,32 @@ body {
   }
 
   .navbar-right .icon {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
   }
 }
 
-
 @media (max-width: 480px) {
+  .navbar {
+    padding: 10px 15px;
+    gap: 10px;
+  }
+
   .navbar-center {
-    gap: 20px;
+    gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .navbar-center li a {
-    font-size: 14px;
+    font-size: 16px;
+    padding: 6px 12px;
     font-family: 'TTSupermolot-Bold', 'Arial', sans-serif;
+  }
+
+  .navbar-right .icon {
+    width: 45px;
+    height: 45px;
   }
 }
 
