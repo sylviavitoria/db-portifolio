@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 @font-face {
   font-family: 'TTSupermolot-Bold';
   src: url('./assets/fonts/TTSupermolotBold.otf') format('opentype');
   font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TTSupermolot-Regular';
+  src: url('./assets/fonts/TTSupermolotRegular.otf') format('opentype');
+  font-weight: normal;
   font-display: swap;
 }
 
@@ -186,4 +194,413 @@ body {
 .navbar-left a:hover .logo {
   transform: scale(1.05);
   opacity: 0.8;
+}
+
+.footer {
+  background-color: #85D4F4;
+  padding: 60px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin-top: auto;
+  margin-bottom: 0;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  border-radius: 0;
+
+}
+
+.footer .navbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .navbar-left .logo {
+  height: 80px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+.footer .navbar-left .logo:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px 20px;
+    justify-content: center;
+    height: auto;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  
+  .footer .navbar-left {
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .footer .navbar-left .logo {
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 15px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  
+  .footer .navbar-left .logo {
+    height: 40px;
+  }
+}
+
+.sobre-container {
+  min-height: calc(100vh - 160px);
+  padding: 40px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow-x: hidden;
+  flex: 1; 
+}
+.main-content {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.left-content {
+  flex: 1;
+  padding-right: 40px;
+  padding-left: 0px;
+  min-width: 0;
+}
+
+.right-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+}
+
+.greeting-text {
+  font-size: 36px;
+  color: #292929;
+  margin-bottom: 10px;
+  font-family: 'TTSupermolot-Bold';
+}
+
+.name {
+  font-size: 80px;
+  color: #292929;
+  margin-bottom: 15px;
+  font-family: 'Roboto Flex'; 
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.position {
+  font-size: 36px;
+  font-weight: 400;
+  color: #292929;
+  margin-bottom: 100px;
+  font-family: 'TTSupermolot-Regular';
+  word-wrap: break-word;
+}
+
+.about-section {
+  margin-top: 20px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 400; 
+  color: #292929;
+  margin-bottom: 20px;
+  font-family: 'TTSupermolot-Bold';
+}
+
+.about-text {
+  font-size: 16px;
+  font-weight: 300; 
+  color: #292929;
+  line-height: 1.6;
+  font-family: 'Roboto Flex';
+  word-wrap: break-word;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 400px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 0;
+  margin-bottom: 40px;
+}
+
+.skills-section {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.skill-category {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.skill-category-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #292929;
+  margin-bottom: 10px;
+  font-family: 'TTSupermolot-Bold';
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.habilidade-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  width: 100%;
+}
+
+.habilidade-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bullet-point {
+  font-size: 16px;
+  color: #292929;
+  font-weight: bold;
+}
+
+.habilidade-titulo {
+  font-size: 14px;
+  color: #292929;
+  font-family: 'Roboto Flex';
+  font-weight: 400;
+}
+
+.bolinhas-container {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.bolinha {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #E5A441;
+  transition: all 0.3s ease;
+}
+
+.bolinha.cheia {
+  background-color: #E5A441;
+}
+
+.bolinha.vazia {
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .sobre-container {
+    padding: 20px;
+    min-height: auto; 
+    align-items: flex-start;
+  }
+
+  .main-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .left-content {
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+  }
+  
+  .right-content {
+    align-items: center;
+  }
+
+  .greeting-text {
+    font-size: 24px;
+  }
+
+  .name {
+    font-size: 48px;
+  }
+
+  .position {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .about-text {
+    font-size: 14px;
+  }
+
+  .profile-photo {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    margin-bottom: 30px;
+  }
+  
+  .skills-section {
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  .skills-container {
+    gap: 25px;
+  }
+  
+  .skill-category-title {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .habilidade-item {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  .habilidade-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+  }
+  
+  .bolinhas-container {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  
+  .bolinha {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #E5A441;
+    transition: all 0.3s ease;
+  }
+  
+  .habilidade-titulo {
+    font-size: 14px;
+    color: #292929;
+    font-family: 'Roboto Flex';
+    font-weight: 400;
+  }
+  
+  .bullet-point {
+    font-size: 14px;
+    color: #292929;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 450px) {
+  .sobre-container {
+    padding: 15px;
+    min-height: auto; 
+    align-items: flex-start;
+  }
+  .greeting-text {
+    font-size: 20px;
+  }
+
+  .name {
+    font-size: 36px;
+  }
+
+  .position {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .about-text {
+    font-size: 13px;
+  }
+
+  .profile-photo {
+    width: 100%;
+    max-width: 250px;
+    height: 170px;
+  }
+
+  .skills-section {
+    margin-top: 25px;
+  }
+  
+  .skills-container {
+    gap: 20px;
+  }
+  
+  .skill-category-title {
+    font-size: 14px;
+  }
+  
+  .habilidade-titulo {
+    font-size: 12px;
+  }
+  
+  .bolinha {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .habilidade-item {
+    padding: 8px 0;
+    gap: 10px;
+  }
 }
