@@ -1,3 +1,4 @@
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo-db-dark-blue.png';
 import github from '../assets/Button.png';
@@ -14,26 +15,21 @@ const Navbar = () => {
 
       <ul className="navbar-center">
         <li>
-          <NavLink 
-            to="/" 
-            className={({ isActive }) => isActive ? 'active' : ''}
-          >
+          <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>
             Sobre
           </NavLink>
         </li>
         <li>
-          <NavLink 
-            to="/curriculo"
-            className={({ isActive }) => isActive ? 'active' : ''}
+          <a
+            href="/SylviaVitoriaCVDB.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Currículo
-          </NavLink>
+          </a>
         </li>
         <li>
-          <NavLink 
-            to="/projetos"
-            className={({ isActive }) => isActive ? 'active' : ''}
-          >
+          <NavLink to="/projetos" className={({ isActive }) => (isActive ? 'active' : '')}>
             Projetos
           </NavLink>
         </li>
