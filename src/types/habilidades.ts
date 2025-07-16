@@ -7,6 +7,7 @@ export const habilidades = {
     { titulo: 'OpenAPI/SWAGGER', nivel: 5 },
     { titulo: 'DOCKER', nivel: 3 },
     { titulo: 'FLYWAY', nivel: 4 }, 
+    { titulo: 'JUNIT / MOCKITO', nivel: 4 },
   ],
   'Frontend': [
     { titulo: 'HTML', nivel: 5 },
@@ -14,5 +15,7 @@ export const habilidades = {
     { titulo: 'JAVASCRIPT/ TYPESCRIPT', nivel: 3 },
     { titulo: 'REACT', nivel: 3 },
     { titulo: 'REACT NATIVE', nivel: 3 },
+    { titulo: 'JEST', nivel: 4 },
+
   ],
 };
