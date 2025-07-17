@@ -15,7 +15,7 @@ O projeto foi hospedado utilizando a plataforma Netlify, que oferece uma forma r
 ## 🚀 Funcionalidades
 
 ### 👤 Sobre  
-Apresenta informações pessoais, minha jornada profissional, cargo atual e habilidades técnicas.
+Apresenta informações pessoais, minha jornada profissional e habilidades técnicas.
 
 ### 📄 Currículo  
 Disponível o meu currículo em PDF na pasta pública, acessível diretamente pela Navbar.
