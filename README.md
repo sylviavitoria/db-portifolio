@@ -3,7 +3,7 @@ Este portfólio foi desenvolvido com React + TypeScript utilizando Vite, com o o
 
 ---
 
-## 🌐 Acesse o portfólio online:
+## 🌐 Acesse o portfólio online: https://portfoliosylviavitoria.netlify.app/
 
 
 ## 🚀 Funcionalidades
