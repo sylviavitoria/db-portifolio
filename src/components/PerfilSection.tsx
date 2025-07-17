@@ -1,5 +1,3 @@
-import React from 'react';
-
 const PerfilSection = () => {
   return (
     <div className="left-content">

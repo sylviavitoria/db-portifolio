@@ -1,4 +1,3 @@
-import React from 'react';
 import Habilidade from './Habilidade';
 import { habilidades } from '../types/habilidades';
 
