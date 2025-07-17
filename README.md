@@ -1,10 +1,16 @@
 # 📁 Portfólio DB 
-Este portfólio foi desenvolvido com React + TypeScript utilizando Vite, com o objetivo de apresentar informações profissionais, habilidades e projetos.
+Este portfólio foi desenvolvido com React e TypeScript, utilizando Vite como ferramenta de build, e hospedado no Netlify para deploy, com o objetivo de apresentar informações profissionais, habilidades e projetos.
 
 ---
 
 ## 🌐 Acesse o portfólio online: https://portfoliosylviavitoria.netlify.app/
 
+---
+
+## 🚢 Deploy no Netlify
+O projeto foi hospedado utilizando a plataforma Netlify, que oferece uma forma rápida, prática e moderna de publicar aplicações front-end.
+
+---
 
 ## 🚀 Funcionalidades
 
@@ -23,7 +29,7 @@ Exibição dos meus principais projetos com:
 - Link para o GitHub ou Deploy.
 
 ### 🧭 Navbar
-Navegação entre páginas, acesso ao currículo em PDF, além de ter acesso as minhas redes socias como GitHub e LinkedIn.  
+Permite navegação entre páginas, acesso ao currículo em PDF e às minhas redes sociais (GitHub e LinkedIn). O logo da empresa também redireciona para o site oficial. 
 
 ### 🦶 Footer: Rodapé com logo institucional.  
 
