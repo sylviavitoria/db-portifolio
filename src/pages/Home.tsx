@@ -1,4 +1,3 @@
-import React from 'react';
 import PerfilSection from '../components/PerfilSection';
 import FotoSection from '../components/FotoSection';
 import HabilidadesSection from '../components/HabilidadesSection';

@@ -1,4 +1,3 @@
-import React from 'react';
 import fotodb from '../assets/portifolio-foto.jpg';
 
 const FotoSection = () => {
