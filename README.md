@@ -1,69 +1,109 @@
-# React + TypeScript + Vite
+# 📁 Portfólio DB 
+Este portfólio foi desenvolvido com React + TypeScript utilizando Vite, com o objetivo de apresentar informações profissionais, habilidades e projetos.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🌐 Acesse o portfólio online:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## 🚀 Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 👤 Sobre  
+Apresenta informações pessoais, minha jornada profissional, cargo atual e habilidades técnicas.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 📄 Currículo  
+Disponível o meu currículo em PDF na pasta pública, acessível diretamente pela Navbar.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### 💻 Projetos  
+Exibição dos meus principais projetos com:  
+- Título  
+- Imagem de capa
+- Tecnologias utilizadas
+- Descrição resumida  
+- Link para o GitHub ou Deploy.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 🧭 Navbar
+Navegação entre páginas, acesso ao currículo em PDF, além de ter acesso as minhas redes socias como GitHub e LinkedIn.  
+
+### 🦶 Footer: Rodapé com logo institucional.  
+
+---
+
+## 🧠 Tecnologias Utilizadas
+
+### 🖥️ Frontend
+
+- **React:** Biblioteca JavaScript para construção de interfaces de usuário.  
+- **TypeScript:** Linguagem tipada que compila para JavaScript.  
+- **Vite:** Ferramenta moderna e rápida para build frontend.  
+- **React Router Dom:** Gerenciamento de rotas e navegação.  
+- **CSS Customizado:** Estilização personalizada do portfólio.
+- **Jest:** Framework de testes
+- **Testing-library:** Testa o comportamento real do usuário
+
+---
+### 🏗️ Padrões e Arquitetura
+
+- **Componentes:** Reutilizáveis e organizados.  
+- **Pages:** Separação clara das páginas da aplicação.  
+- **Design Responsivo:** Layout adaptável a diferentes tamanhos de tela e dispositivos.
+
+---
+
+
+## 📂 Estrutura do Projeto
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+├── public               # Arquivos públicos estáticos, como o currículo PDF, favicon e outras mídias acessíveis diretamente pela URL
+├──src/
+├─── assets/             # Imagens, logos e fontes
+│
+├─── components/         # Componentes React
+│   │_ ─── __tests__/    # Testes para componentes
+│ 
+├── pages/               # Páginas/rotas da aplicação
+├── types/               # Definições de tipos TypeScript
+├── setupTests.ts        # Configuração global para testes
+└── index.css            # Estilos globais da aplicação
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+
+---
+## 🧪 Testes
+O projeto utiliza Jest e Testing Library para testes unitários. Execute os testes com:
+```bash
+npm run test           # Executa todos os testes
+```
+---
+
+# 🌬️ Como Executar em Modo Desenvolvimento
+
+### 📝 Pré-requisitos
+
+- Node.js (v18 ou superior)  
+- npm ou yarn  
+
+## Passo a passo para Execução
+
+### 1. Clone o repositório do Front e do Back
+```bash
+git clone https://github.com/sylviavitoria/db-portifolio.git
+cd db-portifolio
+
+```
+
+### 2. Instale as dependências
+```bash
+npm install
+```
+# Execute o projeto em modo de desenvolvimento
+```bash
+npm run dev
+```
+
+Acesse a aplicação em: [http://localhost:5173](http://localhost:5173)
+
+
+---
