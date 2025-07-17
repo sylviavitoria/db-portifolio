@@ -38,7 +38,7 @@ export const projetos: Projeto[] = [
     id: 4,
     titulo: "Desafio Naruto",
     tecnologias: ["JAVA", "SPRING BOOT", "SPRING SECURITY", "POSTGRESSQL", "JUNIT","DOCKER"],
-    descricao: "Este projeto consiste em uma aplicação Java sobre os conceitos de Programação Orientada a Objetos(POO) pelo anime Naruto, na criação de uma API utilizando Spring Boot, que permite realizar um CRUD de personagens.",
+    descricao: "Este projeto é um sistema Java sobre conceitos de Programação Orientada a Objetos(POO) do anime Naruto, na criação de uma API utilizando Spring Boot, que permite realizar um CRUD de personagens.",
     imagem: "/src/assets/desafioNaruto.png",
     linkGithub: "https://github.com/sylviavitoria/DesafioNaruto"
   },
